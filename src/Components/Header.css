@@ -1,0 +1,7 @@
+.HeaderContainer{
+    @apply flex flex-row justify-center w-full border-t border-gray-300 mb-10
+}
+
+.TittleHeader{
+    @apply text-white text-2xl font-bold
+}

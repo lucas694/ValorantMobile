@@ -1,0 +1,34 @@
+.HomeContainer{
+    @apply flex flex-col items-center justify-center h-screen;
+}
+.HomeContainer{
+    background-image: url("../assets/img/ValorantHomeMob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.ValorantText{
+    @apply absolute top-0 right-0 h-[88%] z-10
+}
+.ValorantLogo{
+    @apply absolute z-10
+}
+.Efeito{
+    @apply absolute top-0 right-0 h-screen w-full object-cover z-[0] opacity-30
+    sm:hidden
+}
+.EfeitoDesk{
+    @apply hidden absolute top-0 right-0 h-[90%] w-full object-cover z-[0] opacity-30
+    sm:block
+}
+.BgMobile{
+    @apply absolute h-screen w-full object-cover z-[0] opacity-10
+    sm:hidden
+}
+.BgDesk{
+    @apply hidden absolute h-screen w-full object-cover z-[0] opacity-10
+    sm:block
+}

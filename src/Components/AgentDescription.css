@@ -1,0 +1,53 @@
+.AgentDescriptionContainer{
+    @apply flex flex-col w-full z-10 pb-10 h-full ;
+}
+.AgentDescriptionContent{
+    @apply flex flex-col items-center w-full z-10 pb-10 ;
+}
+.characterBackground{
+     @apply opacity-20 top-0 right-0 absolute z-0  ;
+ }
+.AgentDescriptionHeader{
+    @apply flex flex-col w-full justify-between px-6 py-6 ;
+}
+
+.ArrowBackIcon{
+    @apply text-[#ece8e1] text-4xl font-bold
+}
+.AgentDescriptionName{
+    @apply text-[#ece8e1] text-4xl font-bold ml-3 pb-1
+}
+.HeaderContent{
+     @apply flex flex-row items-center ;
+ }
+.HeaderContentRole{
+    @apply flex flex-row-reverse items-center pb-1;
+}
+.RoleIcon{
+    @apply w-[3em] font-bold ml-4 rounded-full bg-[#ff4655] p-1.5
+}
+.RoleName{
+    @apply text-white text-2xl font-semibold
+}
+
+.AbilitiesContainer{
+    @apply flex flex-col w-[90%] rounded-[15px] px-4 py-4 bg-[#1e1e1e] opacity-60 mt-2;
+}
+.AbilitiesContent{
+    @apply flex flex-col items-center opacity-100 ;
+}
+.AbilitiesTittle{
+    @apply text-[#ece8e1] text-3xl font-semibold pb-6
+}
+.AbilityIcon{
+    @apply w-[3em] font-bold rounded-full bg-[#ff4655] p-1.5
+}
+.AbilityName{
+    @apply text-white text-base font-semibold
+}
+.AbilityDescription{
+    @apply text-[#ece8e1] text-base font-semibold py-6
+}
+.AbilityHR{
+    @apply mt-6
+}
