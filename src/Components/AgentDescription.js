@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { FaChevronLeft } from "react-icons/fa";
 import {Link} from "react-router-dom";
 import "./AgentDescription.css";
+import axios from "axios";
+
 
 
 const AgentDescription = () => {
@@ -13,11 +15,10 @@ const AgentDescription = () => {
 
   useEffect(() => {
     // Faz uma chamada à API do Valorant para obter o detalhe de um personagem específico
-    fetch(`https://valorant-api.com/v1/agents/${id}`,{ params: { language: "pt-BR"}
+    axios.get(`https://valorant-api.com/v1/agents/${id}`,{ params: { language: "pt-BR"}
     })
-      .then(response => response.json())
-      .then(responseJson => {
-        setCharacter(responseJson.data)
+      .then(response => {
+        setCharacter(response.data.data)
         setLoading(false)
   })
       .catch(error => console.error(error));
