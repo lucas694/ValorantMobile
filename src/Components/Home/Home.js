@@ -1,10 +1,10 @@
 import "./Home.css"
-import ValorantText from "../assets/img/VALORANT.png"
-import ValorantLogo from "../assets/img/Logo.png"
-import Effect from "../assets/img/effect.png"
-import BgMobile from "../assets/img/ValorantHomeMob.png"
-import BgDesk from "../assets/img/ValorantDesk.webp"
-import EffectDesk from "../assets/img/effectDesk.png"
+import ValorantText from "../../assets/img/VALORANT.png"
+import ValorantLogo from "../../assets/img/Logo.png"
+import Effect from "../../assets/img/effect.png"
+import BgMobile from "../../assets/img/ValorantHomeMob.png"
+import BgDesk from "../../assets/img/ValorantDesk.webp"
+import EffectDesk from "../../assets/img/effectDesk.png"
 
 const Home = () => {
   return(

@@ -2,7 +2,7 @@
     @apply flex flex-col items-center justify-center h-screen;
 }
 .HomeContainer{
-    background-image: url("../assets/img/ValorantHomeMob.png");
+    background-image: url("../../assets/img/ValorantHomeMob.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

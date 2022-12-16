@@ -1,6 +1,5 @@
 import "./CardAgents.css"
 import { Link} from "react-router-dom";
-import axios from "axios";
 
 
 const CardAgent = (props) => {
@@ -19,9 +18,9 @@ const CardAgent = (props) => {
 
       <div className={"DescCard"}>
         <p>{props.DescricaoCard}</p>
-        <button className={"Btn-Agents"}>
-          <Link to={`/agents/${props.id}`} className={"LinkButton"}>Ver Mais</Link>
-        </button>
+        <Link to={`/agents/${props.id}`}>
+          <button className={"Btn-Agents"}>Ver Mais</button>
+        </Link>
       </div>
 
     </div>

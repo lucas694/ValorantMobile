@@ -1,9 +1,9 @@
 import "./Header.css"
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="HeaderContainer">
-        <h1 className={"TittleHeader"}>Agentes</h1>
+        <h1 className={"TittleHeader"}>{props.title}</h1>
     </div>
   );
 };

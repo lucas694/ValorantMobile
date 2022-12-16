@@ -1,0 +1,10 @@
+.CardWeaponContainer{
+    @apply bg-[#242526] w-full flex flex-col items-center rounded-[10px] shadow-lg justify-center
+    mt-5 py-2 px-4 pb-4 z-0 shadow-lg shadow-black
+}
+.CardWeaponTittle{
+    @apply text-[#ece8e1] text-3xl font-semibold ml-2 mt-2
+}
+.WeaponImg{
+    @apply w-[6em] h-[6em] flex justify-center items-center
+}

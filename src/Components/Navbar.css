@@ -1,6 +1,6 @@
 .NavbarContainer{
     @apply bg-[#ff4655] w-full flex flex-row rounded-t-[15px] h-[6em] shadow-lg fixed bottom-0
-    z-20
+    z-50
 }
 
 .NavbarContent{

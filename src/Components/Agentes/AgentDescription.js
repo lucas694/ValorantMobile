@@ -12,7 +12,6 @@ const AgentDescription = () => {
   const { id } = useParams();
   const[loading, setLoading] = useState(true);
 
-
   useEffect(() => {
     // Faz uma chamada à API do Valorant para obter o detalhe de um personagem específico
     axios.get(`https://valorant-api.com/v1/agents/${id}`,{ params: { language: "pt-BR"}
@@ -23,9 +22,7 @@ const AgentDescription = () => {
   })
       .catch(error => console.error(error));
   }, [id]);
-  const details = [
-    {name:character.displayName, characterBackground:character.fullPortrait, }
-  ]
+
   if (loading) return(
     <div className="loading">
       <h1>Carregando...</h1>
@@ -44,6 +41,7 @@ const AgentDescription = () => {
             <img src={character.role.displayIcon} alt={""} className={"RoleIcon"}/>
             <h1 className={"RoleName"}>{character.role.displayName}</h1>
           </div>
+
         </header>
         <div className={"AbilitiesContainer"}>
           <h1 className={"AbilitiesTittle"}>Habilidades</h1>
@@ -55,7 +53,7 @@ const AgentDescription = () => {
                     <h1 className={"AbilityName"}>{item.displayName}</h1>
                   </section>
                   <section className={"AbilityDescription"}>
-                    <p className={"AbilityD"}>{item.description}</p>
+                    <p>{item.description}</p>
                     <hr className={"AbilityHR"}/>
                   </section>
                 </div>
